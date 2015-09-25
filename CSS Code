@@ -54,9 +54,10 @@
 
 #header-img  {
     position: absolute;
-    bottom: 65px;
-    left: 20px;
+    bottom: 62px;
+    left: -176px;
     right: 0;
+    margin-left:50%;
 
     /*:4px solid #FF4081;*/
 }
@@ -66,7 +67,7 @@
     background-image: url("%%reddit-spritesheet%%");
     background-position: 0px -303px;
     background-repeat: no-repeat;
-    height: 58px;
+    height: 57px;
     width: 120px;
     display: inline-block;
     vertical-align: bottom;
@@ -76,12 +77,14 @@
 
 .pagename {
     position:absolute;
-    left:200px;
+    left:-139px;
     top:80px;
     font-size:32px;
     color:#FF4081 ;
     border:4px solid #FF4081;
     padding: 4px 4px 4px 4px;
+    display:block;
+    margin-left:50%;
 }
 
 .pagename a {
@@ -99,12 +102,12 @@
 
 /* SR HEADER */
 
-#sr-header-area li.selected , #sr-header-area a.RESShortcutsCurrentSub {
+#header #sr-header-area li.selected , #header #sr-header-area a.RESShortcutsCurrentSub {
     color: #FFEB3B !important;
 }
 
 #sr-header-area { 
-    background-color: #C51162;
+    background-color:#C51162;
     border:none;
     color:#fff;
 }
@@ -270,6 +273,8 @@ background-color:#e5e5e5;
 }
 
 .submit .nub { display: none; }
+
+.morelink .nub {display:none; }
 
 /*RES SHORTCUT CONTAINER*/
 
@@ -475,7 +480,7 @@ color:#000;
     background-color:#e5e5e5;
     border-radius:3px;
     border-bottom:4px solid #3F51B5;
-    border:0px solid #fff;
+    border:0px solid #3F51B5;
 }
 
 .usertext-edit textarea:focus {
@@ -700,3 +705,17 @@ a {
 .res-commentBoxes.res-commentBoxes-rounded .comment {
     background-color: #e5e5e5;
 }
+
+/*SETTINGS AREA*/
+
+.linefield { background-color: #fff; border-radius:3px;}
+
+.linefield textarea, .linefield input[type=text], .linefield input[type=password] { outline:none!important;
+border: 0px solid #03a9f4; background-color:#e5e5e5; border-radius:3px;
+}
+
+.gray {color:#FF4081;}
+
+/*USERNAME COLOR, and uh TAGLINES AND SHIT*/
+
+.tagline a { color: #0079d3;}
